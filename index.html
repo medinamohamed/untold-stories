@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="outer-wrapper">
+        <div class="wrapper">
+            <div class="slide one">
+                <h1 class="between">BETWEEN PAST</h1>
+                <h1 class="present">AND PRESENT</h1>
+                <h2>The untold stories</h2> 
+                <h2 class="part2">of Montreal</h2>
+
+                <a class="btn" href="#"><i class="ion-ios-arrow-down"></i></a>
+
+            </div>
+            <div class="slide two">
+                <p class="para_between">
+                    Between Past & Present is a project to draw attention to the erasure of BIPOC history and identity in the bigger narrative of  Montreal and Quebec history. This project will also underline our contributions to this city and province and 
+the hardships that we had to face 
+for our rights
+                </p>
+
+                <p class="mccord">
+                    To the left <br>
+                    The Lookout, Mount Royal Park,1916<br>
+                    McCord Museum
+                </p>
+
+              
+                
+                <h2 class="project">THE PROJECT</h2>
+                <h1 class="big_one">1</h1>
+                <p class="bonsecours">
+                    To the right
+                    Bonsecours Market,
+                    St. Paul Street, Montreal,
+                    QC, about 1870
+                    McCord Museum
+
+                </p>
+            </div>
+
+            <div class="slide three">
+                <img class= "image-projet" src="img/image_projet.png">
+
+
+            </div>
+            <div class="slide four">
+                <img class= "chinatown" src="img/chinatown.png">
+
+
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger)
+        gsap.from('.between',{opacity:0, duration:2,y:-50})
+        gsap.from('.present',{opacity:0, duration:2,y:-50})
+
+        //gsap.from('.project',{opacity:0, duration:2,y:-50,delay:3})
+
+
+        gsap.from(".project" ,{
+            scrollTrigger: '.project',
+            x: 100
+            
+        })
+    </script>
+
+</body>
+</html>

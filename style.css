@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "miracleregular";
+  src: url("font/miracle/miracle_personal_use-webfont.woff2") format("woff2"),
+    url("font/miracle/miracle_personal_use-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "summerfaithregular";
+  src: url("font/summer_faith/summerfaith-regular-webfont.woff2")
+      format("woff2"),
+    url("font/summer_faith/summerfaith-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 450vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.one {
+  background-image: url("img/background-landing.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.one h1 {
+  color: red;
+  font-family: "miracleregular";
+
+  font-size: 9vw;
+  margin-left: 2%;
+}
+
+.one h2 {
+  color: red;
+  font-family: "summerfaithregular";
+
+  font-size: 6vw;
+  margin-left: 3%;
+}
+
+.btn {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+.part2 {
+  margin-top: -2%;
+}
+
+/* Second page */
+
+.two {
+  background: #d80000;
+  width: 90vw;
+}
+
+.para_between {
+  color: white;
+
+  font-family: "miracleregular";
+
+  text-align: right;
+  width: 29vw;
+
+  padding-top: 10%;
+
+  margin-left: 30%;
+  font-size: 1.5vw;
+}
+
+.two h2 {
+  color: white;
+
+  font-family: "miracleregular";
+
+  text-align: left;
+  width: 29vw;
+  margin-left: 15%;
+  margin-top: 5%;
+  left: 120vw;
+
+  font-size: 10vw;
+}
+
+.big_one {
+  color: white;
+  font-size: 30vw;
+  margin-top: -33%;
+  margin-left: -1%;
+}
+.mccord {
+  color: white;
+  font-family: "Open Sans";
+
+  margin-left: 3%;
+}
+.bonsecours {
+  text-align: right;
+  width: 12%;
+  color: white;
+  font-family: "Open Sans";
+  margin-top: -16%;
+  margin-left: 72%;
+}
+
+.three {
+  background: white;
+  width: 130vw;
+}
+.image-projet {
+  margin-left: -10%;
+  width: 80vw;
+}
+.four {
+  background: red;
+  width: 80vw;
+}
+
+.chinatown {
+  width: 90%;
+  margin-top: 2%;
+  margin-left: 4%;
+}
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
