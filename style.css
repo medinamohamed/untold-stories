@@ -20,11 +20,8 @@
   font-style: normal;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/*     Making it horizontal       */
+
 .slide {
   width: 100vw;
   height: 100vh;
@@ -36,6 +33,23 @@
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*     SECTION 1       */
 
 .one {
   background-image: url("img/background-landing.png");
@@ -58,8 +72,11 @@
   font-size: 6vw;
   margin-left: 3%;
 }
+.of-montreal {
+  margin-top: -2%;
+}
 
-.btn {
+.arrow {
   background-color: red;
   border: none;
   color: white;
@@ -67,22 +84,20 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 80px;
   border-radius: 50%;
-}
-.part2 {
-  margin-top: -2%;
+  margin-left: 85%;
+  margin-top: 10%;
 }
 
-/* Second page */
+/*     SECTION 2       */
 
 .two {
   background: #d80000;
   width: 90vw;
 }
 
-.para_between {
+.text-description {
   color: white;
 
   font-family: "miracleregular";
@@ -94,6 +109,12 @@
 
   margin-left: 30%;
   font-size: 1.5vw;
+}
+.text-mccord {
+  color: white;
+  font-family: "Open Sans";
+
+  margin-left: 3%;
 }
 
 .two h2 {
@@ -110,19 +131,14 @@
   font-size: 10vw;
 }
 
-.big_one {
+.title-one {
   color: white;
   font-size: 30vw;
   margin-top: -33%;
   margin-left: -1%;
 }
-.mccord {
-  color: white;
-  font-family: "Open Sans";
 
-  margin-left: 3%;
-}
-.bonsecours {
+.text-bonsecours {
   text-align: right;
   width: 12%;
   color: white;
@@ -131,35 +147,26 @@
   margin-left: 72%;
 }
 
+/*     SECTION 3      */
+
 .three {
   background: white;
   width: 130vw;
 }
-.image-projet {
+.img-projet {
   margin-left: -10%;
   width: 80vw;
 }
+
+/*     SECTION 4      */
+
 .four {
   background: red;
   width: 80vw;
 }
 
-.chinatown {
+.img-chinatown {
   width: 90%;
   margin-top: 2%;
   margin-left: 4%;
-}
-.outer-wrapper {
-  width: 100vh;
-  height: 100vw;
-  transform: rotate(-90deg) translateX(-100vh);
-  transform-origin: top left;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  position: absolute;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-::-webkit-scrollbar {
-  display: none;
 }
