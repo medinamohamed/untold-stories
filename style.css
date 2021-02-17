@@ -5,10 +5,7 @@
 }
 @font-face {
   font-family: "miracleregular";
-  src: url("font/miracle/miracle_personal_use-webfont.woff2") format("woff2"),
-    url("font/miracle/miracle_personal_use-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  src: url("font/Miracle-Free-Font/Miracle Personal use.woff") format("woff");
 }
 
 @font-face {
@@ -29,7 +26,7 @@
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 450vw;
+  width: 550vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
@@ -50,7 +47,9 @@
 }
 
 /*     SECTION 1       */
-
+.text-title {
+  width: 65vw;
+}
 .one {
   background-image: url("img/background-landing.png");
   background-repeat: no-repeat;
@@ -71,6 +70,7 @@
 
   font-size: 6vw;
   margin-left: 3%;
+  margin-top: -2%;
 }
 .of-montreal {
   margin-top: -2%;
@@ -84,10 +84,10 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 80px;
+  font-size: 70px;
   border-radius: 50%;
   margin-left: 85%;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 /*     SECTION 2       */
@@ -97,7 +97,7 @@
   width: 90vw;
 }
 
-.text-description {
+.text-description_a {
   color: white;
 
   font-family: "miracleregular";
@@ -118,24 +118,14 @@
 }
 
 .two h2 {
-  color: white;
-
-  font-family: "miracleregular";
-
-  text-align: left;
-  width: 29vw;
   margin-left: 15%;
-  margin-top: 5%;
   left: 120vw;
-
-  font-size: 10vw;
+  margin-top: 2%;
 }
 
 .title-one {
-  color: white;
-  font-size: 30vw;
-  margin-top: -33%;
-  margin-left: -1%;
+  margin-top: -38.5%;
+  margin-left: 2%;
 }
 
 .text-bonsecours {
@@ -143,7 +133,7 @@
   width: 12%;
   color: white;
   font-family: "Open Sans";
-  margin-top: -16%;
+  margin-top: -18%;
   margin-left: 72%;
 }
 
@@ -156,6 +146,22 @@
 .img-projet {
   margin-left: -10%;
   width: 80vw;
+  float: left;
+}
+.title-untold-stories {
+  width: 40vw;
+  float: right;
+  margin-right: 16%;
+}
+.text-description_b {
+  font-family: "miracleregular";
+
+  width: 35vw;
+
+  font-size: 1.8vw;
+
+  margin-left: 70%;
+  margin-top: 8%;
 }
 
 /*     SECTION 4      */
@@ -169,4 +175,44 @@
   width: 90%;
   margin-top: 2%;
   margin-left: 4%;
+}
+
+/*     SECTION 5      */
+.title-timeline {
+  margin-top: 15%;
+  margin-left: 15%;
+}
+.siecle_16 {
+  margin-left: 75%;
+  margin-top: -15%;
+}
+
+.siecle_17 {
+  margin-left: 95%;
+  margin-top: -8%;
+}
+.siecle_18 {
+  margin-left: 115%;
+  margin-top: -8%;
+}
+
+.siecle_19 {
+  margin-left: 135%;
+  margin-top: -8%;
+}
+
+.siecle_20 {
+  margin-left: 155%;
+  margin-top: -8%;
+}
+
+.red-line {
+  width: 1477px;
+  height: 10px;
+
+  margin-top: -5%;
+  background-color: #d80000;
+
+  margin-left: 65%;
+  margin-top: 0%;
 }
